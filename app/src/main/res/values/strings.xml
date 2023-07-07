@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Proyecto Finanzas</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Tu App Financiera</string>
+    <string name="nav_header_subtitle">Finanzas.edu.hn</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <!--<string name="action_settings">Settings</string> -->
+
+
+    <string name="menu_home">Ingresos</string>
+    <string name="menu_gallery">Egresos</string>
+    <string name="menu_slideshow">Saldo</string>
+    <string name="menu_R_ingreso">Reporte de Ingresos</string>
+    <string name="menu_R_egreso">Reporte de Egresos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_Escritorio">Escritorio</string>
+</resources>
