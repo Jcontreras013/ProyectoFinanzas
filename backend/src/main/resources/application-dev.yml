@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/contafin
+    username: contafin
+    password: contafin_dev
+  jpa:
+    show-sql: false
+
+logging:
+  level:
+    com.proyectofinanzas.backend: DEBUG

@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/${POSTGRES_DB:contafin}
+    username: ${POSTGRES_USER:contafin}
+    password: ${POSTGRES_PASSWORD:contafin_dev}
