@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Silueta simple de un edificio/banco, centrada dentro de la zona segura del icono adaptativo. -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,28 L82,44 L82,50 L26,50 L26,44 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,54 L38,54 L38,76 L30,76 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,54 L54,54 L54,76 L46,76 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M62,54 L70,54 L70,76 L62,76 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,80 L84,80 L84,86 L24,86 Z" />
+</vector>
