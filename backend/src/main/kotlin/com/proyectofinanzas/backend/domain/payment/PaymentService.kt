@@ -88,7 +88,9 @@ class PaymentService(
             )
         }
 
-        val savedPayment = paymentRepository.save(payment)
+        // saveAndFlush: necesitamos el paymentNumber generado por la secuencia de la BD
+        // (vía @Generated) antes de usarlo en la descripción del asiento contable.
+        val savedPayment = paymentRepository.saveAndFlush(payment)
         val journalEntry = paymentPostingService.post(savedPayment, SecurityUtils.currentUserId())
         savedPayment.journalEntry = journalEntry
 

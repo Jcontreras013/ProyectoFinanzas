@@ -62,7 +62,9 @@ class ExpenseService(
             status = ExpenseStatus.POSTED,
             createdBy = createdBy,
         )
-        val savedExpense = expenseRepository.save(expense)
+        // saveAndFlush: necesitamos el expenseNumber generado por la secuencia de la BD
+        // (vía @Generated) antes de usarlo en la descripción del asiento contable.
+        val savedExpense = expenseRepository.saveAndFlush(expense)
         val journalEntry = expensePostingService.post(savedExpense, SecurityUtils.currentUserId())
         savedExpense.journalEntry = journalEntry
 

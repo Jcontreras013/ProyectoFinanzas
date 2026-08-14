@@ -78,7 +78,9 @@ class InvoiceService(
             notes = request.notes,
             createdBy = createdBy,
         )
-        val savedInvoice = invoiceRepository.save(invoice)
+        // saveAndFlush: necesitamos el invoiceNumber generado por la secuencia de la BD
+        // (vía @Generated) antes de usarlo en la descripción del asiento contable.
+        val savedInvoice = invoiceRepository.saveAndFlush(invoice)
 
         val lines = request.lines.mapIndexed { index, lineRequest ->
             invoiceLineRepository.save(
