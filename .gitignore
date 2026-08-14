@@ -1,15 +1,32 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+# --- General ---
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+*.log
+.env
+.env.local
+
+# --- Gradle / Kotlin / Java (backend, android) ---
+.gradle/
+**/build/
+!**/src/**/build/
+*.iml
+.idea/
 local.properties
+.kotlin/
+.externalNativeBuild/
+.cxx/
+*.jks
+*.keystore
+
+# --- Android specific ---
+android/captures/
+android/.cxx/
+
+# --- Node / Web ---
+web/node_modules/
+web/dist/
+web/.vite/
+web/coverage/
+*.tsbuildinfo
+
+# --- Docker ---
+docker-data/
