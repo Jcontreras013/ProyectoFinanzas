@@ -35,6 +35,17 @@ Monorepo con tres subproyectos independientes:
 
 ## Arranque rápido
 
+### Windows: acceso directo de escritorio
+
+`start-windows.bat` (en la raíz del repo) levanta Postgres, el backend y la web, y abre el navegador automáticamente. Para tener un acceso directo en el Escritorio:
+
+1. Clona el repo y ábrelo en el Explorador de archivos.
+2. Clic derecho sobre `start-windows.bat` → **Enviar a → Escritorio (crear acceso directo)**.
+3. (Opcional) Clic derecho sobre el acceso directo del Escritorio → **Propiedades → Cambiar icono...** para personalizarlo.
+4. Doble clic en el acceso directo para levantar todo y abrir `http://localhost:5173`.
+
+Requiere Docker Desktop corriendo y JDK 21 / Node.js 20+ instalados. Para detener el sistema, cierra las dos ventanas de consola (Backend y Web) que abre el script.
+
 ### 1. Base de datos + backend con Docker Compose
 
 ```bash
